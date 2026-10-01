@@ -12,7 +12,7 @@ p {
 
 .header {
     min-width: 18.25rem;
-    max-width: 75rem;
+    max-width: 76rem;
     margin-inline: auto;
 }
 
@@ -45,7 +45,7 @@ p {
     letter-spacing: .02rem;
     font-family: Produkt;
     font-weight: bold;
-    padding: 0 0.6rem;
+    padding: 0 0.6rem 0 0.75rem;
     font-size: 0.9rem;
     line-height: 1.4rem;
     border-radius: 999em;
