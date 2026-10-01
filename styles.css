@@ -1,25 +1,36 @@
 body {
-    margin: 0 32px;
+    margin: 0;
     padding: 0;
 }
 
 p {
     font-family: Graphik;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
+    min-width: 18.25rem;
+    max-width: 75rem;
+    margin-inline: auto;
+}
+
+.top-header {
+    background-color: lightblue;
+    padding-block: .25rem;
+    padding-inline: 2rem;
     display: flex;
-    font-size: 12px;
-    line-height: 0.7;
+    flex-wrap: wrap;
+    font-size: .75rem;
+    line-height: 1.5rem;
+}
+
+.top-header .align-left {
+    display: flex;
     gap: 24px;
 }
 
-.header .align-left {
-    display: flex;
-    gap: 24px;
-}
-
-.header .align-right {
+.top-header .align-right {
     display: flex;
     margin-left: auto;
     gap: 16px;
