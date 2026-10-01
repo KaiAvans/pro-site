@@ -7,6 +7,7 @@ p {
     font-family: Graphik;
     margin: 0;
     padding: 0;
+    color: #0000a4;
 }
 
 .header {
@@ -16,7 +17,7 @@ p {
 }
 
 .top-header {
-    background-color: lightblue;
+    background-color: white;
     padding-block: .25rem;
     padding-inline: 2rem;
     display: flex;
@@ -32,6 +33,22 @@ p {
 
 .top-header .align-right {
     display: flex;
+    background-color: #ebffee;
+    padding: 0 0.5rem 0rem 0.05rem;
+    border-radius: 999em;
     margin-left: auto;
-    gap: 16px;
+    align-items: center;
+    gap: 4px;
+}
+
+.select-button p {
+    letter-spacing: .02rem;
+    font-family: Produkt;
+    font-weight: bold;
+    padding: 0 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    border-radius: 999em;
+    background-color: #0000a4;
+    color: #01D572;
 }
