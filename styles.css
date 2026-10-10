@@ -10,10 +10,49 @@ p {
     color: #0000a4;
 }
 
-.header-background {
-    background-color: #0000a4;
+/* Top Header ------------------------------------------*/
+.top-header {
+    min-width: 18.25rem;
+    max-width: 76rem;
+    margin-inline: auto;
+    background-color: white;
+    padding-block: 0.25rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    > .align-left {
+        display: flex;
+        gap: 24px;
+        cursor: pointer;
+    }
+
+    > .align-right {
+        display: flex;
+        background-color: #ebffee;
+        padding: 0 0.5rem 0rem 0.05rem;
+        border-radius: 999em;
+        margin-left: auto;
+        align-items: center;
+        cursor: pointer;
+        gap: 4px;
+    }
 }
 
+.select-button p {
+    letter-spacing: 0.02rem;
+    font-family: Produkt;
+    font-weight: bold;
+    padding: 0 0.6rem 0 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    border-radius: 999em;
+    background-color: #0000a4;
+    color: #01d572;
+}
+
+/* Main Header ------------------------------------------*/
 .main-header-background {
     background: #0000a4;
 }
@@ -106,43 +145,4 @@ p {
     cursor: pointer;
 }
 
-.top-header {
-    min-width: 18.25rem;
-    max-width: 76rem;
-    margin-inline: auto;
-    background-color: white;
-    padding-block: 0.25rem;
-    padding-inline: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.75rem;
-    line-height: 1.5rem;
-    > .align-left {
-        display: flex;
-        gap: 24px;
-        cursor: pointer;
-    }
-
-    > .align-right {
-        display: flex;
-        background-color: #ebffee;
-        padding: 0 0.5rem 0rem 0.05rem;
-        border-radius: 999em;
-        margin-left: auto;
-        align-items: center;
-        cursor: pointer;
-        gap: 4px;
-    }
-}
-
-.select-button p {
-    letter-spacing: 0.02rem;
-    font-family: Produkt;
-    font-weight: bold;
-    padding: 0 0.6rem 0 0.75rem;
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-    border-radius: 999em;
-    background-color: #0000a4;
-    color: #01d572;
-}
+/* Bottom Header ------------------------------------------*/
