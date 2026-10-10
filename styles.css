@@ -36,37 +36,74 @@ p {
 
     > .align-right {
         display: flex;
-        gap: 8px;
+        align-items: center;
+        gap: 4px;
     }
 }
 
 .logo {
     width: 80px;
     color: white;
+    cursor: pointer;
 }
 
 .searchbar {
     position: relative;
+
     > .search-icon {
         position: absolute;
         top: 50%;
         right: 16px;
         transform: translateY(-50%);
+        color: #0000a4;
     }
     > .site-search {
-        width: 320px;
-        border-radius: 16px;
-        height: 32px;
+        width: 512px;
+        border-radius: 24px;
+        height: 48px;
         border: none;
         outline: none;
-        padding-left: 16px;
+        padding-left: 24px;
+    }
+    > input::placeholder {
+        font-family: Graphik;
+        color: #00000064;
+        font-size: 14px;
     }
 }
 
 .shophulp {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
+    color: #0000a4;
+    font-family: Produkt;
+    font-size: large;
+    background-color: white;
+    border: none;
+    border-radius: 24px;
+    height: 48px;
+    padding-inline: 16px;
+    cursor: pointer;
+}
+
+.top-right-header-button {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 999rem;
+    overflow: visible;
+}
+
+.top-right-header-button:hover {
+    outline: solid 2px #ffffff;
+}
+
+.inloggen {
+    color: white;
+    font-family: Graphik;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .top-header {
@@ -83,6 +120,7 @@ p {
     > .align-left {
         display: flex;
         gap: 24px;
+        cursor: pointer;
     }
 
     > .align-right {
@@ -92,6 +130,7 @@ p {
         border-radius: 999em;
         margin-left: auto;
         align-items: center;
+        cursor: pointer;
         gap: 4px;
     }
 }
