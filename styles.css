@@ -4,7 +4,7 @@ body {
 }
 
 p {
-    font-family: Graphik;
+    font-family: Graphik, sans-serif;
     margin: 0;
     padding: 0;
     color: #0000a4;
@@ -28,36 +28,32 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    > .align-center {
+        display: flex;
+        gap: 8px;
+    }
+
+    > .align-right {
+        display: flex;
+        gap: 8px;
+    }
 }
 
-.main-header {
-    .logo {
-        width: 80px;
-        color: white;
-    }
+.logo {
+    width: 80px;
+    color: white;
+}
 
-    .searchbar {
-        position: relative;
-    }
-
-    .align-center {
-        display: flex;
-        gap: 8px;
-    }
-
-    .align-right {
-        display: flex;
-        gap: 8px;
-    }
-
-    .search-icon {
+.searchbar {
+    position: relative;
+    > .search-icon {
         position: absolute;
         top: 50%;
         right: 16px;
         transform: translateY(-50%);
     }
-
-    .site-search {
+    > .site-search {
         width: 320px;
         border-radius: 16px;
         height: 32px;
@@ -65,13 +61,14 @@ p {
         outline: none;
         padding-left: 16px;
     }
-
-    .shophulp {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
 }
+
+.shophulp {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 .top-header {
     min-width: 18.25rem;
     max-width: 76rem;
@@ -83,15 +80,12 @@ p {
     flex-wrap: wrap;
     font-size: 0.75rem;
     line-height: 1.5rem;
-}
-
-.top-header {
-    .align-left {
+    > .align-left {
         display: flex;
         gap: 24px;
     }
 
-    .align-right {
+    > .align-right {
         display: flex;
         background-color: #ebffee;
         padding: 0 0.5rem 0rem 0.05rem;
