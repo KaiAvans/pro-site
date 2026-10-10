@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Graphik, sans-serif, sans-serif;
 }
 
 p {
-    font-family: Graphik, sans-serif;
     margin: 0;
     padding: 0;
     color: #0000a4;
@@ -13,7 +13,7 @@ p {
 /* Top Header ------------------------------------------*/
 .top-header {
     min-width: 18.25rem;
-    max-width: 76rem;
+    max-width: 72rem;
     margin-inline: auto;
     background-color: white;
     padding-block: 0.25rem;
@@ -60,7 +60,7 @@ p {
 
 .main-header {
     min-width: 18.25rem;
-    max-width: 76rem;
+    max-width: 72rem;
     margin-inline: auto;
     padding-block: 0.25rem;
     padding-inline: 2rem;
@@ -109,7 +109,7 @@ p {
 }
 
 .searchbar input::placeholder {
-    font-family: Graphik;
+    font-family: Graphik, sans-serif;
     color: #00000064;
     font-size: 14px;
 }
@@ -142,7 +142,7 @@ p {
 
 .account-section__login {
     color: white;
-    font-family: Graphik;
+    font-family: Graphik, sans-serif;
     font-size: 14px;
     text-decoration: none;
     cursor: pointer;
@@ -155,12 +155,13 @@ p {
     background-color: white;
     padding-inline: 2rem;
     min-width: 18.25rem;
-    max-width: 76rem;
-    height: 48px;
+    max-width: 72rem;
+    height: 56px;
 
     margin-inline: auto;
-    font-family: Graphik;
-    font-size: 0.85rem;
+    font-family: Graphik, sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid #d8d8d8;
 }
 
 .navbar__list {
@@ -169,9 +170,33 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 2rem;
+    gap: 24px;
+}
+
+.navbar__list--primary li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .navbar__list--secondary {
-    margin-left: auto;
+    font-size: 12px;
+    gap: 16px;
+}
+
+.language-button {
+    display: flex;
+    align-items: center;
+}
+
+.language-button__dropdown-arrow {
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language-button__flag {
+    height: 14px;
+    width: 24px;
+    margin-right: 4px;
+    margin-left: 8px;
 }
