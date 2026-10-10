@@ -45,6 +45,11 @@ p {
         gap: 8px;
     }
 
+    .align-right {
+        display: flex;
+        gap: 8px;
+    }
+
     .search-icon {
         position: absolute;
         top: 50%;
