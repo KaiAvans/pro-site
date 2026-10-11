@@ -148,6 +148,13 @@ p {
     cursor: pointer;
 }
 
+.account-section__login:hover {
+    text-decoration: underline;
+}
+
+.navbar-background {
+    border-bottom: 1px solid #d8d8d8;
+}
 /* Nav Bar ------------------------------------------*/
 .navbar {
     display: flex;
@@ -161,7 +168,6 @@ p {
     margin-inline: auto;
     font-family: Graphik, sans-serif;
     font-size: 14px;
-    border-bottom: 1px solid #d8d8d8;
 }
 
 .navbar__list {
@@ -182,6 +188,11 @@ p {
 .navbar__list--secondary {
     font-size: 12px;
     gap: 16px;
+}
+
+.navbar__list--secondary li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .language-button {
