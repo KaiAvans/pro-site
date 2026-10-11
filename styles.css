@@ -10,6 +10,18 @@ p {
     color: #0000a4;
 }
 
+h1 {
+    font-family: Produkt;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+h1 strong {
+    font-weight: 900;
+}
 /* Top Header ------------------------------------------*/
 .top-header {
     min-width: 18.25rem;
@@ -210,4 +222,48 @@ p {
     width: 24px;
     margin-right: 4px;
     margin-left: 8px;
+}
+
+.hero {
+    display: flex;
+    min-width: 18.25rem;
+    max-width: 72rem;
+    margin-top: 24px;
+    margin-inline: auto;
+    justify-content: space-between;
+    background: #d2e1ff;
+    color: #0000a4;
+
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 16rem;
+}
+
+.hero__image {
+    clip-path: ellipse(56% 110% at 56%);
+    object-fit: cover;
+    max-height: 324px;
+    max-width: 100%;
+}
+
+.hero__header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 24px;
+}
+
+.hero__header-section button {
+    width: 94px;
+    height: 54px;
+    border: none;
+    border-radius: 8px;
+    background: #0000ff;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        margin-inline: 2rem;
+    }
 }
