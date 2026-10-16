@@ -106,9 +106,10 @@ h1 strong {
 .searchbar__icon {
     position: absolute;
     top: 50%;
-    right: 16px;
+    right: 4px;
     transform: translateY(-50%);
-    color: #0000a4;
+    cursor: pointer;
+    padding: 12px;
 }
 
 .searchbar__input {
@@ -195,6 +196,7 @@ h1 strong {
     display: flex;
     align-items: center;
     gap: 8px;
+    user-select: none;
 }
 
 .navbar__list--secondary {
@@ -224,25 +226,31 @@ h1 strong {
     margin-left: 8px;
 }
 
-.hero {
+.page-content {
     display: flex;
+    flex-direction: column;
+    margin-inline: auto;
     min-width: 18.25rem;
     max-width: 72rem;
+    gap: 40px;
+}
+
+.hero {
+    display: flex;
     margin-top: 24px;
-    margin-inline: auto;
     justify-content: space-between;
     background: #d2e1ff;
     color: #0000a4;
-
+    height: 324px;
     border-radius: 16px;
     overflow: hidden;
     min-height: 16rem;
+    cursor: pointer;
 }
 
 .hero__image {
     clip-path: ellipse(56% 110% at 56%);
     object-fit: cover;
-    max-height: 324px;
     max-width: 100%;
 }
 
@@ -260,10 +268,52 @@ h1 strong {
     border-radius: 8px;
     background: #0000ff;
     color: white;
+    cursor: pointer;
 }
 
+.product-carousel {
+    display: flex;
+    gap: 24px;
+}
+
+.product-image {
+    object-fit: contain;
+    width: 270px;
+    cursor: pointer;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 224px;
+    cursor: pointer;
+    background-color: #d2e1ff;
+    border-radius: 16px;
+    overflow: hidden;
+    padding-inline: 24px;
+    padding-block: 18px;
+}
+
+.product-container-image {
+    object-fit: contain;
+    height: 120px;
+}
+
+.product-container h1 {
+    font-size: 18px;
+    font-family: Produkt;
+    line-height: 1.25;
+    color: #0000a4;
+}
 @media (max-width: 1200px) {
-    .hero {
+    .page-content {
         margin-inline: 2rem;
+    }
+    .hero {
+        height: 273px;
+    }
+    h1 {
+        font-size: 36px;
     }
 }
